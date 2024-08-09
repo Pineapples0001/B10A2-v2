@@ -574,7 +574,7 @@ table{
     }
     
     .input-taker input{
-        width: 70%;
+        width: 78%;
     }
 
     .input-taker select{
@@ -583,5 +583,16 @@ table{
     
     .cal-btn{
         width: 60%;
+    }
+}
+
+/*   had some trouble without it for phones */
+@media screen and (max-width: 440px){
+    .input-taker input{
+        width: 70%;
+    }
+
+    .input-taker select{
+        width: 100%;
     }
 }

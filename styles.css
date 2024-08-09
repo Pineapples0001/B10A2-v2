@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -274,6 +273,110 @@ nav>ul>li>a{
     overflow: hidden;
 }
 
+.bonus-caption{
+    text-align: center;
+}
+
+.bonus-des{
+    text-align: center;
+    padding: 0 25%;
+}
+
+.bmi-top{
+    display: grid;
+    justify-content:center ;
+}
+
+.bmi-caption{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.bmi-des{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-bottom: 5.5rem;
+}
+
+.table-inputs{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    gap:11rem;
+    padding-top: 3.0625rem;
+}
+
+caption{
+    font-size: 1.75rem;
+    font-weight: 900;
+    padding-bottom: 3.25rem;
+    text-align: left;
+}
+
+th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 1rem;
+    text-align: left;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+th{
+    font-size: 1rem;
+}
+
+table{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+.input-column{
+    width: 35%;
+}
+
+.input-caption{
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.input-des{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-bottom: 1.175rem;
+}
+
+.input-taker{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.input-taker select:last-child {
+    grid-column: span 2;
+  }
+
+.input-taker input,
+.input-taker select{
+    color: rgba(255, 255, 255, 0.6);
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 2.25rem 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.cal-btn{
+    border: none;
+    margin-top: 2rem;
+    width: 35%;
+    padding: 1rem 0rem;
+}
 
 @media screen and (max-width: 576px) {
     header{
@@ -406,7 +509,7 @@ nav>ul>li>a{
     }
 
     .runner-picture img {
-        transform: translate(-45%, -40%) scale(0.30);
+        transform: translate(-42%, -35%) scale(0.4);
     }
 
     .runner-picture {
@@ -425,5 +528,58 @@ nav>ul>li>a{
 
     .runner-btn{
         width: 100%;
+    }
+    
+    .bmi-caption{
+        font-size: 2rem;
+        padding-left: 1.25rem;
+    }
+
+    .bmi-des{
+        padding-left: 1.25rem;
+        width: 80%;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .table-inputs{
+        flex-direction: column;
+        justify-content: center;
+        gap:2.5rem;
+        padding-top: 3.0625rem;
+        padding-left: 1.25rem;
+    }
+    
+    caption{
+        font-size: 1rem;
+        padding-bottom: 1.25rem;
+    }
+    
+    .input-column{
+        width: 80%;
+    }
+    
+    .input-caption{
+        font-size: 1rem;
+    }
+    
+    .input-taker{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .input-taker input,
+    .input-taker select{
+        color: rgba(255, 255, 255, 0.6);
+        background-color:rgba(255, 255, 255, 0.1);
+        padding: 0.75rem 2.25rem 0.75rem 1.25rem;
+        border: none;
+        border-radius: 8px;
+    }
+    
+    .cal-btn{
+        border: none;
+        margin-top: 2rem;
+        width: 35%;
+        padding: 1rem 0rem;
     }
 }

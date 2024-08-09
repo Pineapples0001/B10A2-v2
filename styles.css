@@ -306,6 +306,7 @@ nav>ul>li>a{
     justify-content: center;
     gap:11rem;
     padding-top: 3.0625rem;
+    padding-bottom: 3.6875rem;
 }
 
 caption{
@@ -554,32 +555,33 @@ table{
         font-size: 1rem;
         padding-bottom: 1.25rem;
     }
-    
+
     .input-column{
+        width: 100%;
+    }
+    
+    .input-written{
         width: 80%;
     }
     
     .input-caption{
         font-size: 1rem;
     }
-    
+
     .input-taker{
-        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        padding-right: 1.25rem;
     }
     
-    .input-taker input,
+    .input-taker input{
+        width: 70%;
+    }
+
     .input-taker select{
-        color: rgba(255, 255, 255, 0.6);
-        background-color:rgba(255, 255, 255, 0.1);
-        padding: 0.75rem 2.25rem 0.75rem 1.25rem;
-        border: none;
-        border-radius: 8px;
+        width: 100%;
     }
     
     .cal-btn{
-        border: none;
-        margin-top: 2rem;
-        width: 35%;
-        padding: 1rem 0rem;
+        width: 60%;
     }
 }

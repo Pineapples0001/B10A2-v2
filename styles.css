@@ -363,10 +363,24 @@ table{
     grid-column: span 2;
   }
 
-.input-taker input,
-.input-taker select{
+.input-taker input{
     color: rgba(255, 255, 255, 0.6);
     background-color:rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 2.25rem 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+}
+
+select{
+    color: rgba(255, 255, 255, 0.3);
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 2.25rem 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+}
+
+option{
+    color: rgb(17, 17, 17);
     padding: 0.75rem 2.25rem 0.75rem 1.25rem;
     border: none;
     border-radius: 8px;
@@ -377,6 +391,51 @@ table{
     margin-top: 2rem;
     width: 35%;
     padding: 1rem 0rem;
+}
+
+.team-caption{
+    text-align: center;
+    margin-top: 5.5rem;
+}
+
+.team-des{
+    text-align: center;
+    width: 40%;
+    margin: 0.75rem auto 3.625rem auto;
+}
+
+.trainers-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    margin:auto;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.trainer-picture{
+    border-radius: 18px;
+}
+
+.trainer-info{
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 1rem;
+}
+
+.trainer-name{
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.trainer-occ{
+    font-weight: 100;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 576px) {
@@ -569,30 +628,34 @@ table{
     }
 
     .input-taker{
-        gap: 1rem;
-        padding-right: 1.25rem;
-    }
-    
-    .input-taker input{
-        width: 78%;
+        padding-right: 1rem;
     }
 
-    .input-taker select{
-        width: 100%;
+    .input-taker input, 
+    .input-taker select {
+        padding: 0.75rem 1rem 0.75rem 0.5rem;
     }
     
     .cal-btn{
         width: 60%;
     }
-}
 
-/*   had some trouble without it for phones */
-@media screen and (max-width: 440px){
-    .input-taker input{
+    .team-des{
         width: 70%;
     }
+    
+    .trainers-section{
+        grid-template-columns: repeat(1,1fr);
+    }
 
-    .input-taker select{
+    
+    .trainer-picture{
+        border-radius: 18px;
         width: 100%;
+        margin: auto;
+    }
+
+    .visual{
+        display: none;
     }
 }

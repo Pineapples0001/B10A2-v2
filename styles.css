@@ -415,6 +415,7 @@ option{
     justify-items: center;
     align-items: center;
     border-radius: 18px;
+    margin-bottom: 5.5rem;
 }
 
 .trainer-picture{
@@ -436,6 +437,63 @@ option{
     font-weight: 100;
     margin-top: 0;
     color: rgba(255, 255, 255, 0.7);
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4.125rem 11.875rem 2rem 11.875rem;
+}
+
+.footer-bor{
+    display: flex;
+    gap: 6.375rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4.125rem;
+}
+
+.footer-des{
+    width: 80%;
+}
+
+div>ul{
+    list-style: none;
+}
+
+div>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.get-started{
+    text-align: left;
+}
+
+.get-started ul{
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.get-started ul li {
+    margin-bottom: 1.25rem;
+}
+
+.get-started a{
+    color:rgba(255, 255, 255, 0.5);
+    text-wrap: nowrap;
+}
+
+.get-started-cap{
+    font-weight: 700;
+    font-size: 2rem;
+    text-wrap: nowrap;
+}
+
+.ending{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 2rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -657,5 +715,19 @@ option{
 
     .visual{
         display: none;
+    }
+
+    footer{
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0 0 2rem 1.25rem;
+    }
+    
+    .footer-bor{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .footer-des{
+        width: 85%;
     }
 }

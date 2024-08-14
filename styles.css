@@ -273,14 +273,57 @@ nav>ul>li>a{
     overflow: hidden;
 }
 
-.bonus-caption{
+.plans{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 15rem 5.5rem 15rem;
+}
+
+.plans th, .plans td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 1rem;
+    text-align: left;
+}
+
+.def-table{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.plans td{
+    font-weight: 500;
     text-align: center;
 }
 
-.bonus-des{
-    text-align: center;
-    padding: 0 25%;
+.yes{
+    color:rgb(0, 65, 14);
 }
+
+.no{
+    color: rgb(80, 0, 0);
+}
+
+.plans td:first-child{
+    text-align: left;
+}
+
+.plans th{
+    font-size: 1rem;
+}
+
+.plans table{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+.plans table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.plans table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
 
 .bmi-top{
     display: grid;
@@ -309,29 +352,29 @@ nav>ul>li>a{
     padding-bottom: 3.6875rem;
 }
 
-caption{
+.table-inputs caption{
     font-size: 1.75rem;
     font-weight: 900;
     padding-bottom: 3.25rem;
     text-align: left;
 }
 
-th,td{
+.table-inputs th, .table-inputs td{
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.5rem 1rem;
     text-align: left;
 }
 
-td{
+.table-inputs td{
     color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
 }
 
-th{
+.table-inputs th{
     font-size: 1rem;
 }
 
-table{
+.table-inputs table{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
 }
@@ -361,10 +404,6 @@ table{
 
 .input-taker select:last-child {
     grid-column: span 2;
-    background-color:rgba(255, 255, 255, 0.1);
-    padding: 0.75rem 2.25rem 0.75rem 1.25rem;
-    border: none;
-    border-radius: 8px;
   }
 
 .input-taker input{
@@ -452,11 +491,13 @@ footer{
     display: flex;
     gap: 6.375rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-right: 2rem;
+    margin-left: 1.5rem;
     padding-bottom: 4.125rem;
 }
 
 .footer-des{
-    width: 80%;
+    width: 90%;
 }
 
 div>ul{
@@ -500,7 +541,258 @@ div>ul>li>a{
     padding-top: 2rem;
 }
 
-@media screen and (max-width: 576px) {
+.plans table{
+    margin: auto 0rem;
+}
+
+@media screen and (max-width: 576px) and (min-width: 436px) {
+    header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    nav{
+        justify-content: space-between;      
+    }
+
+    nav>ul{
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .cover-main{
+        flex-direction: column;
+    }
+    .cover-main-written{
+        width: 50%;
+    }
+    
+    .moto{
+        font-size: 2.25rem;
+        font-weight: 900;
+        margin-bottom: 1.75rem;
+    }
+    
+    .shape{
+        position: relative;
+        visibility: hidden;
+        font-size: 2.25rem;
+        padding-left: 0;
+    }
+    
+    .shape2{
+        position: absolute;
+        font-family: Miama;
+        font-weight: 400;
+        margin-left: -7rem;
+        margin-top: -1.90rem;
+        font-size: 5rem;
+    }
+    
+    .description{
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 0;
+        margin-bottom: 1.125rem;
+        width: 95%;
+    }
+
+    .cover-main-image{
+        text-align: center;
+    }
+    
+    .buttons{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .join-club{
+        font-size: 1.125rem;
+        text-wrap: nowrap;
+    }
+    
+    .visual{
+        display: none;
+    }
+    
+    .visual2{
+        display: block;
+    }
+
+    .down-app{
+        font-size: 1.125rem;
+        padding: 1rem 1.5rem;
+        text-wrap: nowrap;
+    }
+
+    .red-circle{
+        width:8vw;
+        height:8vw;
+    }
+
+    .trans-box{
+        margin-left: 8rem;
+        margin-top: 16rem;
+    }
+
+    .trans-box2{
+        margin-top: 8rem;
+        margin-left: 20rem;
+    }
+
+    .habit{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+    
+    }
+    
+    .habit-written{
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .habit-caption{
+        margin-top: 0;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .habit-des{
+        padding: 0 8.5rem;
+    }
+    
+    .habit-pictures-details{
+        grid-template-columns: repeat(1,1fr);
+        width: 40%;
+    }
+
+    .runner{
+        flex-direction: column;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .runner-des{
+        width: 70%;
+    }
+
+    .runner-picture img {
+        transform: translate(-42%, -35%) scale(0.4);
+    }
+
+    .runner-picture {
+        margin-top: 1.9375rem;
+        width: 100%;
+        height: 35vh;
+    }
+
+    .runner-written{
+        width: 100%;
+    }
+
+    .runner-des{
+        padding: 0;
+    }
+
+    .runner-btn{
+        width: 100%;
+    }
+    .plans{
+        margin: auto;
+        margin-bottom: 5.5rem;
+    }
+
+
+    .bmi-caption{
+        font-size: 2rem;
+        padding-left: 1.25rem;
+    }
+
+    .bmi-des{
+        padding-left: 1.25rem;
+        width: 60%;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .table-inputs{
+        flex-direction: column;
+        justify-content: center;
+        gap:2.5rem;
+        padding-top: 3.0625rem;
+        padding-left: 1.25rem;
+    }
+    
+    .table-inputs caption{
+        font-size: 1rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .input-column{
+        width: 100%;
+    }
+    
+    .input-written{
+        width: 80%;
+    }
+    
+    .input-caption{
+        font-size: 1rem;
+    }
+
+    .input-taker{
+        padding-right: 1rem;
+    }
+
+    .input-taker input, 
+    .input-taker select {
+        padding: 0.75rem 0rem 0.75rem 0.75rem;
+    }
+    
+    .cal-btn{
+        width: 50%;
+    }
+
+    .team-des{
+        width: 70%;
+    }
+    
+    .trainers-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .trainer-picture{
+        border-radius: 18px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .visual{
+        display: none;
+    }
+
+    footer{
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0 0 2rem 1.25rem;
+    }
+    
+    .footer-bor{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .footer-des{
+        width: 70%;
+    }
+}
+
+/* THIS IS FOR IPHONE 14 PRO MAX ONLY */
+@media screen and (max-width: 435px) {  
     header{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -648,6 +940,11 @@ div>ul>li>a{
         padding: 0;
     }
 
+    .plans{
+        margin: auto;
+        margin-bottom: 5.5rem;
+    }
+
     .runner-btn{
         width: 100%;
     }
@@ -695,7 +992,7 @@ div>ul>li>a{
 
     .input-taker input, 
     .input-taker select {
-        padding: 0.75rem 1rem 0.75rem 0.5rem;
+        padding: 0.75rem 0.5rem 0.75rem 0.5rem;
     }
     
     .cal-btn{
@@ -735,4 +1032,3 @@ div>ul>li>a{
         width: 85%;
     }
 }
-
